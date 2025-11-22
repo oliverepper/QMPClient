@@ -27,7 +27,7 @@ So I think the second chuck of 14 bytes delivered by dd sends "ond line\nthird".
 
 Idea:
 
-I could buffer the "ond" myself and concat it to "ond line\n" once that arrives.  But from the documentation I was expecting to be called with a buffer containing: "second line\nthird".
+I could buffer the "sec" myself and concat it to "ond line\n" once that arrives.  But from the documentation I was expecting to be called with a buffer containing: "second line\nthird".
 
 
 I totally see that all of this is possible to be forced into oom by a malicious attacker, but the framer runs in user space, right?  So I was expecting the framer to buffer and update the buffer for me.  Reading the article above I might not be alone with that expectation, right?
